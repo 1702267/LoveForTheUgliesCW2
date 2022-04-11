@@ -8,6 +8,15 @@ import helmet from 'helmet'
 import template from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\template'
 import userRoutes from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\server\routes\user.routes'
 import authRoutes from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\server\routes\auth.routes'
+// modules for server side rendering
+import React from 'react'
+import ReactDOMServer from 'react-dom/server'
+import MainRouter from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\client\MainRouter'
+import { StaticRouter } from 'react-router-dom'
+import { ServerStyleSheets, ThemeProvider } from '@material-ui/styles'
+import theme from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\client\theme'
+//end
+
 //comment out before building for production
 import devBundle from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\server\devBundle'
 
@@ -41,8 +50,26 @@ app.use((err, req, res, next) => {
 
 
 
-app.get('/',(req, res) => {
-  res.status(200).send(Template())
+app.get('*', (req, res) => {
+ const sheets = new ServerStyleSheets()
+ const context = {}
+ const markup = ReactDOMServer.renderToString(
+ sheets.collect(
+ <StaticRouter location={req.url} context={context}>
+ <ThemeProvider theme={theme}>
+ <MainRouter />
+ </ThemeProvider>
+ </StaticRouter>
+ )
+ )
+ if (context.url) {
+ return res.redirect(303, context.url)
+ }
+ const css = sheets.toString()
+ res.status(200).send(Template({
+ markup: markup,
+ css: css
+ }))
 })
 
 
