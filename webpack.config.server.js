@@ -7,7 +7,7 @@ const CURRENT_WORKING_DIR = progress.cwd()
 
 const congig = {
   name: "server",
-  entry: [ path.join(CURRENT_WORKING_DIR, './server/server.js')],
+  entry: [ path.join(CURRENT_WORKING_DIR, 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/server/server.js')],
   target: "node",
   output: {
     path: path.join(CURRENT_WORKING_DIR, '/dist'),

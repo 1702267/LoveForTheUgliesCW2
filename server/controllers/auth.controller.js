@@ -1,7 +1,7 @@
-import User from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\server\models\user.model'
+import User from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/server/models/user.model'
 import jwt from 'jsonwebtoken'
 import expressJwt from 'express-jwt'
-import config from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\config\config'
+import config from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/config/config'
 
 const signin = async (req, res) => {
   try {

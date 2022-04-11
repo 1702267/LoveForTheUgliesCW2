@@ -1,5 +1,5 @@
-import config from './../config/config'
-import app from './express'
+import config from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/config/config'
+import app from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/server/express'
 import mongoose from 'mongoose'
 
 // Connection URL

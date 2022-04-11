@@ -1,69 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react'
+import MainRouter from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/love4theuglies/src/MainRouter'
+import {BrowserRouter} from 'react-router-dom'
+import { ThemeProvider } from '@material-ui/styles'
+import theme from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/love4theuglies/src/theme'
+import { hot } from 'react-hot-loader'
 
-class MyToDoList extends React.Component {
- constructor(props) {
-   super(props);
-   this.state = { items: [], text: ''};
-   this.valChange = this.valChange.bind(this);
-   this.valSubmit = this.valSubmit.bind(this);
- }
+const App = () => {
+  React.useEffect(() => {
+    const jssStyles = document.querySelector('#jss-server-side')
+    if (jssStyles) {
+      jssStyles.parentNode.removeChild(jssStyles)
+    }
+  }, [])
 
- render() {
- return (
-   <div className="App-header">
-   <h1>My Fancy To Do List</h1>
-   <TodoList items={this.state.items} />
-   <form onSubmit={this.valSubmit}>
-   <label htmlFor="new-todo">
-   What should we do next....?
-   </label>
-   <input
-   id="new-todo"
-   onChange={this.valChange}
-   value={this.state.text}
- />
-  <button>
-    Add #{this.state.items.length +1}
-  </button>
- </form>
- </div>
- );
- }
+  return (
+  <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <MainRouter/>
+      </ThemeProvider>
+  </BrowserRouter>
+)}
 
- valChange(e) {
- this.setState({text: e.target.value})
- }
-
- valSubmit(e) {
-   e.preventDefault();
-   if(!this.state.text.length){
-     return;
- }
- const newItem = {
-   text: this.state.text,
-   id: Date.now()
- };
- this.setState(state => ({
-   items: state.items.concat(newItem),
-   text: ''
- }));
- }
-}
-
-class TodoList extends React.Component {
- render() {
-   return (
-     <ul>
-     {this.props.items.map(item => (
-       <li key={item.id}>{item.text}</li>
-     ))}
-     </ul>
- );
- }
-}
-
-
-
-
-export default MyToDoList;
+export default hot(module)(App)

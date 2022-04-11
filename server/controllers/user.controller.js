@@ -1,6 +1,6 @@
-import User from '../models/user.model'
+import User from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/server/models/user.model'
 import extend from 'lodash/extend'
-import errorHandler from './../helpers/dbErrorHandler'
+import errorHandler from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/server/helpers/dbErrorHandler'
 
 const create = async (req, res) => {
  const user = new User(req.body)

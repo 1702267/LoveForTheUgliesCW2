@@ -1,6 +1,6 @@
 import express from 'express'
-import userCtrl from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\server\controllers\user.controller'
-import authCtrl from 'C:\Users\Acer Nitro 5 SSD\Documents\Uni Stuff\4th Year\Enterprise Web Systems\LoveForTheUgliesCW2\LoveForTheUgliesCW2\server\controllers\auth.controller'
+import userCtrl from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/server/controllers/user.controller'
+import authCtrl from 'C:/Users/Acer Nitro 5 SSD/Documents/Uni Stuff/4th Year/Enterprise Web Systems/LoveForTheUgliesCW2/LoveForTheUgliesCW2/server/controllers/auth.controller'
 
 const router = express.Router()
 
