@@ -7,10 +7,10 @@ class XYZ extends Component {
   render() {
     return (
       <div className="condiv home">
-      <img src={profilepic} className="profilepic"></img>
       <p> This is my hamster, Simon! He is a very handsome boy, though some people don't like hamsters so that's my justification for putting him on here. He doesn't mind too much...</p>
       <p> I just need the world to know that I would die for him okay thank you </p>
       <p> No, he is not named after the chipmunk...</p>
+      <img src={profilepic} className="profilepic"></img>
       <Social />
       </div>
     )

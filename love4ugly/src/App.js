@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Home from './contents/Home';
 import About from './contents/About';
 import Pictures from './contents/Pictures';
-import Skills from './contents/Skills';
+import Shop from './contents/Shop';
 import Comment from './contents/Comment';
 
 
@@ -25,11 +25,11 @@ function App() {
       <Route exact path="/about">
         <About />
       </Route>
-      <Route exact path="pictures">
+      <Route exact path="/pictures">
         <Pictures />
       </Route>
-      <Route exact path="/skills">
-        <Skills />
+      <Route exact path="/shop">
+        <Shop />
       </Route>
       <Route exact path="/comment">
         <Comment />
