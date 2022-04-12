@@ -10,7 +10,7 @@ class Pictures extends Component {
   render() {
     return (
       <div className="condiv">
-      <h1 className="subtopic">Fooled You!</h1>
+      <h2 className="subtopic">Fooled You!</h2>
       <h3>You thought this was going to be pictures of ugly animals? Nope! It's more pictures of my hamster</h3>
       <h6>Unless you think hamsters are ugly- in which case I don't think we can be friends sorry</h6>
       <img src={simon1} className="simon1"></img>

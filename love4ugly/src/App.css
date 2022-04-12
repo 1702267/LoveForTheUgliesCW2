@@ -12,11 +12,40 @@ url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swa
 margin:0;
 padding: 0;
 }
+
+
 body
 {
 font-family: 'Raleway';
-
 }
+
+p
+{
+  color: white;
+}
+
+h2
+{
+  color: white;
+}
+
+h3
+{
+  color: white;
+}
+
+h4
+{
+  color: white;
+}
+
+h6
+{
+  color: white;
+}
+
+
+
 .App
 {
 display: flex;

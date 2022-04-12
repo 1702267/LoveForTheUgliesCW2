@@ -6,7 +6,7 @@ class Comment extends Component {
   render() {
     return (
       <div className="condiv home">
-      <h1>Leave a comment!</h1>
+      <h2>Leave a comment!</h2>
       <h3>but nothing rude please...</h3>
       <p>This is where  a comments page should go if I could get that to work... Ideally I would have it so that users could start their own threads and comment on others. Admins would be able to moderate comments</p>
       <form>

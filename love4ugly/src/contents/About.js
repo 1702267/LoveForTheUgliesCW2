@@ -3,9 +3,9 @@ class About extends Component {
 render() {
 return (
 <div className="condiv">
-<h1 className="subtopic">Love For The Uglies!</h1>
+<h2 className="subtopic">Love For The Uglies!</h2>
 <h4>Just a little about us...</h4>
-<h1>Ugly animals deserve love too!</h1>
+<h2>Ugly animals deserve love too!</h2>
 <h3>Snails especially, they're friend shaped...</h3>
 <br></br>
 <p>

@@ -12,7 +12,7 @@ class Shop extends Component {
   render() {
     return (
       <div className="condiv skills">
-      <h1 className="subtopic">Shop Page</h1>
+      <h2 className="subtopic">Shop Page</h2>
       <div class="Cart-Container"></div>
       <div class="Header">
       <h3 class="Heading">Shopping Cart</h3>
@@ -21,7 +21,7 @@ class Shop extends Component {
       <div class="image-box">
       </div>
       <div class="about">
-    
+
 
       </div>
       <div class="counter"></div>
