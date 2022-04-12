@@ -72,3 +72,15 @@ color: #9a9b9c;
 {
 color: #ffffff;
 }
+.subtopic
+{
+margin:10px 10px 30px 10px !important;
+}
+p
+{
+font-size: var(--fontsize-p);
+}
+h1,h2,h3,h4,p
+{
+margin: 10px;
+}
