@@ -13,11 +13,21 @@ class Shop extends Component {
     return (
       <div className="condiv skills">
       <h1 className="subtopic">Shop Page</h1>
-      <ul>
-      {this.state.shopList.map((value)=>{
-        return <li>{value}</li>
-      })}
-      </ul>
+      <div class="Cart-Container"></div>
+      <div class="Header">
+      <h3 class="Heading">Shopping Cart</h3>
+      <h5 class="Action">Remove all</h5>
+      <div class="Cart-Items">
+      <div class="image-box">
+      </div>
+      <div class="about">
+    
+
+      </div>
+      <div class="counter"></div>
+      <div class="prices"></div>
+      </div>
+      </div>
       <Social />
       </div>
     )
