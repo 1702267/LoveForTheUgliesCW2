@@ -8,9 +8,10 @@ Route,
 import Navbar from './components/Navbar';
 import Home from './contents/Home';
 import About from './contents/About';
-import Education from './contents/Education';
+import Pictures from './contents/Pictures';
 import Skills from './contents/Skills';
-import Contact from './contents/Contact';
+import Comment from './contents/Comment';
+
 
 
 function App() {
@@ -24,14 +25,14 @@ function App() {
       <Route exact path="/about">
         <About />
       </Route>
-      <Route exact path="/education">
-        <Education />
+      <Route exact path="pictures">
+        <Pictures />
       </Route>
       <Route exact path="/skills">
         <Skills />
       </Route>
-      <Route exact path="/contact">
-        <Contact />
+      <Route exact path="/comment">
+        <Comment />
       </Route>
       </div>
     </Router>
